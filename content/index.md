@@ -1,14 +1,23 @@
 ---
-title: "Min fina titel"
+title: "Hem"
+
+views:
+    byline:
+        region: main
+        template: anax/v2/block/default
+        sort: 2
+        data:
+            meta:
+                type: single
+                route: block/byline
 ---
+
 Min me-sida i kursen design
 =========================
 
-Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/index.md`.
+Välkommen till min me-sida i kursen design. Kursen är en del av kurspaketet Webbprogrammering på Blekinge Tekniska Högskola och syftet med den här sidan är att i praktiken öva på de moment som kursen innefattar. Sidan kommer att uppdateras under kursens gång i och med att ny kunskap och nya lärdomar tillkommer i varje kursmoment, så håll utkik!
 
-[FIGURE src="image/lisa.jpg?w=500" class="right" caption="Bild på mig"]
-
-Välkommen till min me-sida i kursen design-v2. Kursen är en del av kurspaketet Webbprogrammering på Blekinge Tekniska Högskola och syftet med den här sidan är att i praktiken öva på de moment som kursen innefattar. Sidan kommer att uppdateras under kursens gång i och med att ny kunskap och nya lärdomar tillkommer i varje kursmoment, så håll utkik!
+[FIGURE src="img/lisa.jpg" class="right" caption="Bild på mig"]
 
 Mitt namn är Lisa Hult och jag är född och uppvuxen i Stockholm, mitt i smeten. Barndom och tonår har spenderats i samma kvarter, samma lägenhet och samma sommarstuga.  I gymnasiet blev jag störtförälskad i ”The great white north” eller som vi känner till det, Kanada, dit jag åkte som utbytesstudent under ett år. Livet på prärien var helt fantastiskt och gav mig mersmak på äventyr och vinter. Sedan dess har jag ständigt drömt om, planerat och varit på väg till nästa ställe medans jag jobbat och jobbat och jobbat för att spara pengar.
 

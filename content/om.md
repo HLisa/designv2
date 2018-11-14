@@ -16,21 +16,18 @@ views:
                 type: single
                 route: block/om-redovisa
 
-    block:
-        region: sidebar-right
+    byline:
+        region: main
         template: anax/v2/block/default
+        sort: 2
         data:
             meta:
                 type: single
-                route: block/om-block
+                route: block/byline
 ---
 Om
 =========================
 
-Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/om.md`.
+Kursen "Teknisk design och användarvänlighet" är en del av kurspaketet Webbprogrammering på Blekinge Tekniska Högskola. Kursen inriktar sig på design och användarvänlighet och innehåller sju olika kursmoment. Varje moment resulterar i en uppdatering av designen på me-sidan. Det sjunde och sista momentet innefattar en eximination i form av ett slutprojekt.
 
-Skriv några kloka ord om kursen?
-
-Lägg till en representativ bild för kursen, enligt ditt egna val.
-
-[FIGURE src=image/car.png?w=300 caption="En fin bil som demobild."]
+[FIGURE src=img/pencil.JPG caption="Färgpennor."]
