@@ -6,20 +6,16 @@ Min me-sida i kursen design
 
 Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/index.md`.
 
-[FIGURE src="image/me.jpg?w=500" class="right" caption="Bild på mig"]
+[FIGURE src="image/lisa.jpg?w=500" class="right" caption="Bild på mig"]
 
-Detta är min me-sida i kursen. Denna sidan innehåller en presentation av mig själv. Underhåll denna sidan under hela kursen och uppdatera den efter hand och behov.
+Välkommen till min me-sida i kursen design-v2. Kursen är en del av kurspaketet Webbprogrammering på Blekinge Tekniska Högskola och syftet med den här sidan är att i praktiken öva på de moment som kursen innefattar. Sidan kommer att uppdateras under kursens gång i och med att ny kunskap och nya lärdomar tillkommer i varje kursmoment, så håll utkik!
 
-Så, en presentation en bra början. Skriv några ord om dig själv. Jag börjar.
+Mitt namn är Lisa Hult och jag är född och uppvuxen i Stockholm, mitt i smeten. Barndom och tonår har spenderats i samma kvarter, samma lägenhet och samma sommarstuga.  I gymnasiet blev jag störtförälskad i ”The great white north” eller som vi känner till det, Kanada, dit jag åkte som utbytesstudent under ett år. Livet på prärien var helt fantastiskt och gav mig mersmak på äventyr och vinter. Sedan dess har jag ständigt drömt om, planerat och varit på väg till nästa ställe medans jag jobbat och jobbat och jobbat för att spara pengar.
 
-Mitt namn är Mikael Roos. Född och uppvuxen i Bankeryd, Småland, strax utanför Jönköping, i ett villaområde som byggdes upp samtidigt som vi flyttade in där. Jag gillade landhockey och har spelat bandy och hockey samt gått bowlinggymnasiet i Nässjö. Jag har varit städare, diskare, kallskänka, servitör och kock. På ett bananskal landade jag i Ronneby när jag började högskolan 1990 där och nu är jag kvar med fru, barn och så vidare.
+Efter en vintersäsong i franska alperna sökte jag mig långt, långt norrut, så långt jag bara kunde, och hamnade i Abisko. Abisko ligger en bit norr om Kiruna blev mitt hem under det kommande året där jag jobbade på STF Abisko Turiststation, ett av Svenska Turistföreningens hotell och vandrarhem.  Midnattssolen och polarnatten är båda två magiska på sina egna sätt men möjligheterna att åka skidor på vinter gör denna årstid till en solklar vinnare.
 
-Programmering har alltid intresserat mig sedan 13-årsåldern och min första dator var en Spectravideo 328 med bandspelare.
+Jag har alltid tyckt om att åka skidor och lärde mig det redan som treåring. För det mesta har jag väl åkt i pisten och lite i skogen som alla andra men i Abisko utvecklades det här intresset och jag blev frälst vid turande. Uppför berg med stighudar för att sedan få sitt välförtjänta åk ner. I Abisko träffade jag min pojkvän och vi bestämde oss efter den gångna vintern för att flytta tillbaka till Stockholm.
 
-Om jag skall nämna någon hobby, förutom webbprogrammering, så får det bli att bära sten på sommarstugetomten, och det finns sten så det räcker och blir över.
+Väl hemma kom jag på att programmering nog var något för mig och bestämde mig för att söka en kurs. Utöver detta nyfunna intresse och utbildning så läser jag till Hälsocoach på Lillsveds Idrottsfolkhögskola, en udda kombination kan en tycka. Jag är även en aktiv motionär på Friskis&Svettis och jobbar som receptionist på diverse olika anläggningar lite då och då.
 
-Till och från får jag för mig att börja på lite hobbies, ett år satsade jag på pokerspel, ett annat år var det geocaching och sedan turfing. Nu ligger jag lågt med hobbies, men något kanske dyker upp...?
-
-Vi syns och hörs i forum och chatt!
-
-/Mikael
+Vi syns igen!
