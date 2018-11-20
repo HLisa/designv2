@@ -1,3 +1,3 @@
-#### Footer col 2
+#### Innehåll
 
-Med brödtext i ett stycke som säger något trevligt om just detta block, eller kanske en lista av länkar.
+På webbplatsen hittar du information om kursen Design-v2 samt verktyg och tekniker som används i varje kursmoment. Du kan även läsa om mig som går kursen och mina reflektioner och erfarenheten efter varje kursmoment skrivna som redovisningstexter. 

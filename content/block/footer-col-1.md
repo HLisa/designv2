@@ -1,3 +1,3 @@
-#### Footer col 1
+#### Om webbplatsen
 
-Med brödtext i ett stycke som säger något trevligt om just detta block, eller kanske en lista av länkar.
+Den här webbplatsen är skapad för kursen [Design-v2](https://dbwebb.se/kurser/design-v2) på Blekinge Tekniska Högskola. Under kursens gång kommer uppdateringar och information att tillkomma. 

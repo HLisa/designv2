@@ -1,0 +1,291 @@
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+
+/**
+ * Variables
+ */
+
+
+/**
+ * General layout
+ */
+
+ // /* Hide submenu, leave this to kmom02 */
+ // .rm-desktop ul {
+ //     display: none;
+ // }
+ //
+ // /* Hide responsive/mobile menu, leave this to kmom02 */
+ // .rm-navbar-max {
+ //     display: none;
+ // }
+
+ .row::after {
+     content: "";
+     display: block;
+     clear:both;
+ }
+
+ .outer-wrap-header {
+    max-width: 100%;
+ }
+
+ .inner-wrap-header {
+     max-width: 100%;
+     margin: 0 auto;
+     text-align: center;
+ }
+
+ .site-logo {
+     display: none;
+ }
+
+ .site-logo-text {
+     font-size: 60px;
+     font-style: italic;
+ }
+
+ .site-logo-text a {
+     text-decoration: none;
+     font-style: italic;
+ }
+
+ .site-logo-text a:hover {
+     text-decoration: underline;
+ }
+
+ .region-header {
+    padding-top: 50px;
+    height: 160px;
+ }
+
+ .region.header-col-1,
+ .region.header-col-3 {
+     width: 20%;
+     float: left;
+ }
+
+ .region.header-col-2 {
+     width: 60%;
+     float: left;
+ }
+
+ .inner-wrap-flash {
+    text-align: center;
+    max-width: 100%;
+ }
+
+ .my-navbar li a {
+     text-decoration: none;
+     color: #333;
+     font-size: 24px;
+ }
+
+ .my-navbar li a:hover {
+    text-decoration: none;
+ }
+
+  .my-navbar li a .selected {
+    text-decoration: none;
+  }
+
+ .inner-wrap-breadcrumb {
+     width: 70%
+ }
+
+.outer-wrap-main {
+    max-width: 100%
+}
+
+ .inner-wrap-main {
+    margin: 0 auto;
+    width: 900px;
+    padding-bottom: 20px
+ }
+
+ .region-main.has-sidebar {
+     display: inline;
+     float: left;
+     width: 75%
+ }
+
+.has.sidebar-left,
+.has.sidebar-right {
+    max-width: 20%
+}
+
+ .right {
+     float: right;
+     padding: 10px;
+ }
+
+ .wrap-sidebar {
+     box-sizing: border-box;
+     padding-top: 10px;
+     width: 25%;
+     float: left;
+     display: inline;
+ }
+
+ .outer-wrap-footer {
+    box-sizing: border-box;
+    background-color: #333;
+    width: 100%;
+    margin-top: 2em;
+    padding: 10px;
+ }
+
+ .inner-wrap-footer {
+    margin: 0 auto;
+    width: 1100px;
+ }
+
+ .footer-column {
+    width: 30%;
+    float: left;
+    padding: 10px;
+    color: grey;
+    height: 200px;
+    border-bottom: 2px solid grey;
+ }
+
+ .footer-column a {
+    color: grey;
+ }
+
+ .site-footer {
+    text-align: center;
+    font-style: italic;
+    font-size: 14px;
+    color: grey;
+}
+
+.site-footer a{
+    color: grey;
+    font-style: normal;
+}
+
+.block h4 {
+    font-size: 18px;
+}
+
+.block p {
+   margin-top: 5px;
+   font-family: helvetica;
+}
+
+figcaption p {
+    float: none;
+    font-style: italic;
+}
+
+.region-sidebar-right .block {
+    float: right;
+    padding: 10px;
+}
+
+.region-sidebar-right .block:hover {
+      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.block .toc {
+    list-style-type: none;
+    padding-right: 10px;
+}
+
+.toc a:hover {
+    text-decoration: underline;
+}
+
+ul.toc li a {
+    text-decoration: none;
+}
+
+ul.toc li.level-0 {
+    font-weight: bolder;
+    font-style: oblique;
+}
+
+ul.toc li.section-header {
+    margin-top: 1.4em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.next a,
+.previous a {
+    font-style: oblique;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.next a:hover,
+.previous a:hover {
+    text-decoration: underline
+}
+
+.next {
+   float: right;
+}
+
+.inner-wrap-main h4 {
+    margin-bottom: 0;
+}
+
+.region-main .block {
+    box-sizing: border-box;
+    padding: 1em;
+    font-size: 14px;
+    width: 700px;;
+    margin: 0 auto;
+}
+
+.region-main .block img {
+    float: left;
+    margin-right: 1em;
+}
+
+.region-main .block ::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.region-main .block:hover {
+      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.inner-wrap-breadcrumb {
+    margin: 0 auto;
+    width: 70%;
+    font-size: larger;
+}
+
+.breadcrumb-list ul {
+    list-style-type: none;
+}
+
+.breadcrumb-list ul li {
+    display: inline;
+    padding-left: 10px;
+}
+
+.breadcrumb-list ul li a {
+    text-decoration: none;
+    font-style: oblique;
+}
+
+.breadcrumb-list ul li a:hover {
+    text-decoration: underline;
+}
+
+.figure {
+    margin: 0 auto;
+}
+
+.region-main .figure {
+    padding-top: 5px;
+    text-align: center;
+}
