@@ -5,7 +5,7 @@
 @bgColorHtml: #fff;
 @bgColorBody: #fff;
 @colorBody: #333;
-@fontFamilyBody: helvetica;
+// @fontFamilyBody: helvetica;
 
 
 @media (min-width: 64em) {
@@ -20,11 +20,8 @@ body {
     padding: 0;
     color: @colorBody;
     background-color: @bgColorBody;
-    font: 100.01%/1 @fontFamilyBody;
-}
-
-.site-logo {
-    display: none;
+    // font: 100.01%/1 @fontFamilyBody;
+    #desinax-hgrid.font(@fontSizeBody);
 }
 
 img {
@@ -34,3 +31,6 @@ img {
 a {
     color: @colorBody;
 }
+
+// Activate grid and affect all typographic elements
+#desinax-hgrid.activateDefaultTypography();

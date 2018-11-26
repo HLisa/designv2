@@ -1,7 +1,41 @@
 /*!
- * Stylesheet for design kmom02.
+ * Stylesheet for design kmom03.
  *
  * This stylesheet is for the design course and kmom02 where we use LESS.
+ */
+@font-face {
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cinzel Regular'), local('Cinzel-Regular'), url(https://fonts.gstatic.com/s/cinzel/v7/8vIJ7ww63mVu7gt79mT-.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Cinzel Bold'), local('Cinzel-Bold'), url(https://fonts.gstatic.com/s/cinzel/v7/8vIK7ww63mVu7gtzTUHuE2Zf.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Quicksand Regular'), local('Quicksand-Regular'), url(https://fonts.gstatic.com/s/quicksand/v8/6xKtdSZaM9iE8KbpRA_hK1QI.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Quicksand Bold'), local('Quicksand-Bold'), url(https://fonts.gstatic.com/s/quicksand/v8/6xKodSZaM9iE8KbpRA_pkHEYT8L6.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptug8zYS_SKggPNyC0ISg.ttf) format('truetype');
+}
+/**
+ * A small clearfix:
+ * http://stackoverflow.com/questions/211383/what-methods-of-clearfix-can-i-use
  */
 /**
   * Normalize and reset the style.
@@ -310,37 +344,6 @@ template {
  */
 [hidden] {
   display: none;
-}
-/**
- * Layout for responsive style through media queries.
- */
-@media screen and (max-width: 1500px) {
-  .site-logo {
-    display: none;
-  }
-}
-/**
- * Navbar
- */
-@media screen and (max-width: 960px) {
-  .rm-desktop a {
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-  }
-}
-@media screen and (max-width: 800px) {
-  .region-header-col-1,
-  .region-header-col-3 {
-    width: 15%;
-  }
-  .region-header-col-2 {
-    width: 70%;
-  }
-}
-@media screen and (max-width: 700px) {
-  .rm-desktop {
-    display: none;
-  }
 }
 /**
  * Font Awesome.
@@ -4349,294 +4352,12 @@ template {
  * Internal self contained modules, save in directory module/.
  */
 /**
- * Base style to affect HTML elements on a general scale.
- */
-/**
- * Base style to affect HTML elements on a general scale.
- */
-@media (min-width: 64em) {
-  html {
-    overflow-y: scroll;
-    background-color: #fff;
-  }
-}
-body {
-  margin: 0;
-  padding: 0;
-  color: #333;
-  background-color: #fff;
-  font: 100.01%/1 helvetica;
-}
-.site-logo {
-  display: none;
-}
-img {
-  max-width: 100%;
-}
-a {
-  color: #333;
-}
-/**
  * Layout style for general structure of header, navbar, main, footer
  * and other regions of the page including route specific styles.
  */
 /**
- * Layout style for general structure of header, navbar, main, footer
- * and other regions of the page including route specific styles.
- */
-/**
- * Variables
- */
-/**
- * General layout
- */
-.row::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-.outer-wrap-header {
-  max-width: 100%;
-}
-.inner-wrap-header {
-  max-width: 100%;
-  margin: 0 auto;
-  text-align: center;
-}
-.site-logo-text {
-  font-size: 60px;
-  font-style: italic;
-}
-.site-logo-text a {
-  text-decoration: none;
-  font-style: italic;
-}
-.site-logo-text a:hover {
-  text-decoration: underline;
-}
-.region-header {
-  padding-top: 50px;
-  height: 160px;
-}
-.region.header-col-1,
-.region.header-col-3 {
-  width: 20%;
-  float: left;
-}
-.region.header-col-2 {
-  width: 60%;
-  float: left;
-}
-.inner-wrap-flash {
-  text-align: center;
-  max-width: 100%;
-}
-.my-navbar li a {
-  text-decoration: none;
-  color: #333;
-  font-size: 24px;
-}
-.my-navbar li a:hover {
-  text-decoration: none;
-}
-.my-navbar li a .selected {
-  text-decoration: none;
-}
-.inner-wrap-breadcrumb {
-  width: 70%;
-}
-.outer-wrap-main {
-  max-width: 100%;
-}
-.inner-wrap-main {
-  margin: 0 auto;
-  width: 900px;
-  padding-bottom: 20px;
-}
-.region-main.has-sidebar {
-  display: inline;
-  float: left;
-  width: 75%;
-}
-.has.sidebar-left,
-.has.sidebar-right {
-  max-width: 20%;
-}
-.right {
-  float: right;
-  padding: 10px;
-}
-.wrap-sidebar {
-  box-sizing: border-box;
-  padding-top: 10px;
-  width: 25%;
-  float: left;
-  display: inline;
-}
-.outer-wrap-footer {
-  box-sizing: border-box;
-  background-color: #333;
-  width: 100%;
-  margin-top: 2em;
-  padding: 10px;
-}
-.inner-wrap-footer {
-  margin: 0 auto;
-  width: 1100px;
-}
-.footer-column {
-  width: 30%;
-  float: left;
-  padding: 10px;
-  color: grey;
-  height: 200px;
-  border-bottom: 2px solid grey;
-}
-.footer-column a {
-  color: grey;
-}
-.site-footer {
-  text-align: center;
-  font-style: italic;
-  font-size: 14px;
-  color: grey;
-}
-.site-footer a {
-  color: grey;
-  font-style: normal;
-}
-.block h4 {
-  font-size: 18px;
-}
-.block p {
-  margin-top: 5px;
-  font-family: helvetica;
-}
-figcaption p {
-  float: none;
-  font-style: italic;
-}
-.region-sidebar-right .block {
-  float: right;
-  padding: 10px;
-}
-.region-sidebar-right .block:hover {
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
-}
-.block .toc {
-  list-style-type: none;
-  padding-right: 10px;
-}
-.toc a:hover {
-  text-decoration: underline;
-}
-ul.toc li a {
-  text-decoration: none;
-}
-ul.toc li.level-0 {
-  font-weight: bolder;
-  font-style: oblique;
-}
-ul.toc li.section-header {
-  margin-top: 1.4em;
-  margin-bottom: 0.5em;
-  font-weight: bold;
-}
-.next a,
-.previous a {
-  font-style: oblique;
-  font-size: 18px;
-  text-decoration: none;
-}
-.next a:hover,
-.previous a:hover {
-  text-decoration: underline;
-}
-.next {
-  float: right;
-}
-.inner-wrap-main h4 {
-  margin-bottom: 0;
-}
-.region-main .block {
-  box-sizing: border-box;
-  padding: 1em;
-  font-size: 14px;
-  width: 700px;
-  margin: 0 auto;
-}
-.region-main .block img {
-  float: left;
-  margin-right: 1em;
-}
-.region-main .block ::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-.region-main .block:hover {
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
-}
-.inner-wrap-breadcrumb {
-  margin: 0 auto;
-  width: 70%;
-  font-size: larger;
-}
-.breadcrumb-list ul {
-  list-style-type: none;
-}
-.breadcrumb-list ul li {
-  display: inline;
-  padding-left: 10px;
-}
-.breadcrumb-list ul li a {
-  text-decoration: none;
-  font-style: oblique;
-}
-.breadcrumb-list ul li a:hover {
-  text-decoration: underline;
-}
-.figure {
-  margin: 0 auto;
-}
-.region-main .figure {
-  padding-top: 5px;
-  text-align: center;
-}
-/**
- * Show off the regions used in the website, to ease styling.
- */
-.regions .outer-wrap {
-  background-color: #f4e3c9;
-  border: 1px solid #e3b774;
-}
-.regions .inner-wrap {
-  background-color: #f4e0e9;
-  border: 1px solid #d995b4;
-}
-.regions .region-header-col-1,
-.regions .region-header-col-2,
-.regions .region-header-col-3,
-.regions .region-flash,
-.regions .region-breadcrumb,
-.regions .region-flash-message,
-.regions .region-columns-above,
-.regions .region-main,
-.regions .region-after-main,
-.regions .region-columns-below,
-.regions .region-sidebar-left,
-.regions .region-sidebar-right,
-.regions .region-footer,
-.regions .region-footer-column-1,
-.regions .region-footer-column-2,
-.regions .region-footer-column-3 {
-  background-color: #b5dce1;
-  border: 1px solid #6cbac4;
-  color: #111;
-}
-/**
- * A responsive menu.
- */
+  * A responsive menu.
+  */
 /**
  * Style for responsive menu
  */
@@ -4863,23 +4584,725 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   right: 0;
 }
 /**
- * Style for responsive menu
+  * Import the typographic grid.
+  */
+/**
+ * Typographic font families to choose from.
  */
 /**
-  * Example on media queries
+ * Typographic defaults.
+ */
+#desinax-hgrid {
+  /**
+     * Mixins used when setting default fonts
+     */
+  /**
+     * Settings for headings H1-H6
+     */
+  /**
+     * Text elements
+     */
+  /**
+     * Display source code.
+     */
+  /**
+     * Lists
+     */
+  /**
+     * Tables. Because of the need for padding on TH and TD, the vertical rhythm
+     * on table cells has to be 1.5*@magic-number.
+     */
+  /**
+     * More typography elements
+     */
+  /**
+     * Enable all default typographic elements.
+     */
+}
+.hgrid .inner-wrap {
+  background-image: url("../img/magic-number-24px.png");
+}
+/**
+  * Base style to affect HTML elements on a general scale.
   */
-@media screen and (max-width: 680px) {
-  .rm-small {
-    display: block;
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+@media (min-width: 64em) {
+  html {
+    overflow-y: scroll;
+    background-color: #fff;
   }
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #fff;
+  font: 16px/1.5 "Quicksand", sans-serif;
+}
+img {
+  max-width: 100%;
+}
+a {
+  color: #333;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cinzel", serif;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+h1 img,
+h2 img,
+h3 img,
+h4 img,
+h5 img,
+h6 img {
+  margin: 0;
+}
+h1 {
+  font-size: 2.375em;
+  line-height: 1.26315789;
+  font-weight: normal;
+  border-bottom: 1px solid #666;
+  margin-bottom: 23px;
+}
+h1 ~ h1,
+h1 ~ h2,
+h1 ~ h3,
+h1 ~ h4,
+h1 ~ h5,
+h1 ~ h6 {
+  margin-top: 48px;
+}
+h1 + h2 {
+  margin-top: 24px;
+}
+h2 {
+  font-size: 1.875em;
+  line-height: 1.6;
+  font-weight: normal;
+  margin-bottom: 23px;
+  border-bottom: 1px solid #CCC;
+}
+h2 + h3 {
+  margin-top: 24px;
+}
+h3 {
+  font-size: 1.75em;
+  line-height: 1.71428571;
+  font-weight: normal;
+  margin-bottom: 23px;
+  border-bottom: 1px solid #EEE;
+}
+h3 + h4 {
+  margin-top: 24px;
+}
+h4 {
+  font-size: 1.5em;
+  line-height: 1;
+  font-weight: normal;
+  margin-bottom: 23px;
+  border-bottom: 1px solid grey;
+}
+h4 + h5 {
+  margin-top: 24px;
+}
+h5 {
+  font-size: 1.25em;
+  line-height: 1.2;
+  margin-bottom: 23px;
+  border-bottom: 1px solid #EEE;
+}
+h5 + h6 {
+  margin-top: 24px;
+}
+h6 {
+  font-size: 1.25em;
+  line-height: 1.2;
+  margin-bottom: 23px;
+  border-bottom: 1px solid #EEE;
+}
+p {
+  margin-bottom: 24px;
+}
+small,
+.small,
+.smaller {
+  font-size: 0.875em;
+}
+strong,
+b {
+  font-weight: bold;
+}
+mark {
+  color: #000;
+  background-color: #ff9;
+}
+abbr[title],
+dfn[title] {
+  text-decoration: dotted underline;
+}
+em,
+i,
+dfn {
+  font-style: italic;
+}
+sub,
+sup {
+  font-size: 0.75em;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+blockquote {
+  border-left: 4px solid #eee;
+  padding-left: 1em;
+  margin-left: 0;
+  margin-bottom: 24px;
+}
+pre,
+code,
+kbd,
+samp,
+.code {
+  font-family: "monospace";
+}
+code,
+samp {
+  border: 1px solid #ccc;
+  padding-left: 1px;
+  padding-right: 1px;
+}
+code {
+  background-color: #eee;
+}
+pre,
+div.code,
+pre code {
+  font-size: 1em;
+  line-height: 1.5;
+  white-space: pre;
+}
+pre {
+  margin-bottom: 24px;
+}
+pre code {
+  display: block;
+  overflow: auto;
+}
+div.code,
+pre code {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 23px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 0.5em;
+  background-color: #eee;
+}
+ul,
+ol {
+  margin-bottom: 24px;
+  padding-left: 1.5em;
+}
+ul p,
+ol p {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin: 0;
+}
+ul {
+  list-style-type: disc;
+}
+ol {
+  list-style-type: decimal;
+}
+dl {
+  margin-bottom: 24px;
+}
+dl.horizontal dt {
+  clear: left;
+  float: left;
+  width: 7em;
+}
+dl.horizontal dd {
+  margin-left: 8em;
+  display: block;
+}
+dd {
+  margin-left: 1.5em;
+}
+article table,
+.table,
+.table1,
+.table2 {
+  margin-bottom: 24px;
+}
+table.full-width,
+article .table,
+.table,
+.table2 {
+  width: 100%;
+}
+article table,
+.table,
+.table2 {
+  border-collapse: collapse;
+  /*
+            tfoot {
+            }
+            */
+}
+article table caption,
+.table caption,
+.table2 caption {
+  font-size: 0.875em;
+  line-height: 1.71428571;
+  text-align: left;
+  font-style: italic;
+}
+article table thead,
+.table thead,
+.table2 thead {
+  box-shadow: 0 1px 0 #aaa;
+}
+article table th,
+.table th,
+.table2 th {
+  vertical-align: bottom;
+  font-weight: bold;
+  text-align: left;
+}
+article table th,
+.table th,
+.table2 th,
+article table td,
+.table td,
+.table2 td {
+  padding: 6px;
+}
+article table tr,
+.table tr,
+.table2 tr {
+  box-shadow: 0 1px 0 #ccc;
+}
+article table tr:hover,
+.table tr:hover,
+.table2 tr:hover {
+  color: #000;
+  background-color: #f6f6f6;
+  box-shadow: 0 1px 0 #666;
+}
+table.striped tbody tr:nth-child(even) td,
+table.striped tbody tr.even td {
+  background-color: #fafafa;
+}
+hr {
+  position: relative;
+  top: -2px;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  margin-top: 35px;
+  margin-bottom: 36px;
+}
+hr::after {
+  content: "§";
+  position: relative;
+  top: -0.7em;
+  left: 50%;
+  padding: 0 0.25em;
+  background-color: #fff;
+}
+/**
+ * Import the vertical grid.
+ */
+/**
+ * Fluid and Responsive Vertical Grid
+ */
+/**
+ * Namespace what could be namespaced
+ */
+#desinax-vgrid {
+  /**
+     * Wrap grid in a container.
+     */
+  /**
+     * Show grid.
+     */
+  /**
+     * All columns must be wrapped in a row.
+     */
+  /**
+     * Create a column spanning @col columns.
+     */
+  /**
+     * Push a column @offset columns.
+     */
+  /**
+     * Pull a column left @offset columns.
+     */
+  /**
+     * Pull a column right @offset columns.
+     */
+}
+/**
+ * Layout using vgrid.
+ */
+/**
+ * Variables
+ */
+/**
+  * Responsive 1, 2, 3
+  */
+@media screen and (max-width: 1000px) {
+  .region-main {
+    display: inline;
+    float: left;
+    width: 98.95833333%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+  }
+}
+@media screen and (max-width: 850px) {
+  .region-main.has-sidebar-right {
+    display: inline;
+    float: left;
+    width: 98.95833333%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+  }
+  .region-sidebar-right {
+    display: inline;
+    float: left;
+    width: 98.95833333%;
+    margin-right: 0.52083333%;
+    margin-left: 0.52083333%;
+  }
+}
+/**
+ * General layout
+ */
+.row {
+  display: block;
+  width: 101.04166667%;
+  margin-left: -0.52083333%;
+  margin-right: -0.52083333%;
+  margin-bottom: 12px;
+}
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.inner-wrap {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1100px;
+}
+.outer-wrap-header {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 100%;
+}
+.inner-wrap-header {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 100%;
+}
+.inner-wrap-header .row {
+  max-width: 100%;
+}
+.vgrid .inner-wrap {
+  background: url("../img/grid_24x30x10-nomargin.png") repeat-y scroll center center;
+  background-size: 100% auto;
+}
+@media (min-width: 1100px) {
+  .vgrid .inner-wrap {
+    background-size: 1100px auto;
+  }
+}
+.vgrid .inner-wrap.inner-wrap-header {
+  background: url("../img/grid_24x30x10-nomargin.png") repeat-y scroll center center;
+  background-size: 100% auto;
+}
+@media (min-width: 100%) {
+  .vgrid .inner-wrap.inner-wrap-header {
+    background-size: 100% auto;
+  }
+}
+.site-logo-text {
+  font-size: 50px;
+  font-style: italic;
+}
+.site-logo {
+  display: none;
+}
+.site-logo-text a {
+  text-decoration: none;
+}
+.region-header-col-1,
+.region-header-col-3 {
+  display: inline;
+  float: left;
+  width: 19.79166667%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+}
+.region-header-col-2 {
+  display: inline;
+  float: left;
+  width: 57.29166667%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+  text-align: center;
+}
+.region-flash {
+  display: inline;
+  float: left;
+  width: 98.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+}
+.my-navbar li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 24px;
+}
+.my-navbar li a:hover {
+  text-decoration: underline;
+}
+.my-navbar ul li {
+  background-color: #fff;
+  color: #333;
+}
+.my-navbar li a .selected {
+  text-decoration: underline;
+}
+.my-navbar-rm-submenu-bottom li {
+  background-color: #000;
+}
+.region-breadcrumb {
+  display: inline;
+  float: left;
+  width: 98.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+}
+.inner-wrap-main {
+  padding-bottom: 20px;
+}
+.region-main {
+  display: inline;
+  float: left;
+  width: 73.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+  margin-left: 13.02083333%;
+}
+.region-main.has-sidebar {
+  margin-left: 0.52083333%;
+}
+.region-main.has-sidebar-right {
+  display: inline;
+  float: left;
+  width: 69.79166667%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+}
+.region-sidebar-left,
+.region-sidebar-right {
+  display: inline;
+  float: left;
+  width: 23.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+}
+.region-sidebar-right {
+  margin-left: 4.6875%;
+}
+.right {
+  float: right;
+  padding: 10px;
+}
+.wrap-sidebar {
+  box-sizing: border-box;
+}
+figcaption p {
+  font-style: italic;
+}
+.block .toc {
+  list-style-type: none;
+}
+.toc a:hover {
+  text-decoration: underline;
+}
+ul.toc li a {
+  text-decoration: none;
+}
+ul.toc li.level-0 {
+  font-weight: bolder;
+  font-style: oblique;
+}
+ul.toc li.section-header {
+  font-weight: bold;
+}
+.next a,
+.previous a {
+  font-style: oblique;
+  text-decoration: none;
+}
+.next a:hover,
+.previous a:hover {
+  text-decoration: underline;
+}
+.next {
+  float: right;
+}
+.region-main .figure {
+  padding-top: 5px;
+  text-align: center;
+}
+.region-main .block {
+  box-sizing: border-box;
+  padding: 1em;
+  font-size: 14px;
+}
+.region-main .block .figure {
+  padding-top: 5px;
+  text-align: -webkit-auto;
+  float: left;
+}
+.region-main .block ::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.region-main .block:hover {
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
+}
+.inner-wrap-breadcrumb {
+  font-size: 20px;
+}
+.breadcrumb-list ul {
+  list-style-type: none;
+}
+.breadcrumb-list ul li {
+  display: inline;
+}
+.breadcrumb-list ul li a {
+  text-decoration: none;
+}
+.breadcrumb-list ul li a:hover {
+  text-decoration: underline;
+}
+.outer-wrap-footer {
+  box-sizing: border-box;
+  background-color: #333;
+}
+.footer-column {
+  display: inline;
+  float: left;
+  width: 32.29166667%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+  color: grey;
+}
+.footer-column a {
+  color: grey;
+}
+.site-footer {
+  display: inline;
+  float: left;
+  width: 98.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+  text-align: center;
+  font-style: italic;
+  color: grey;
+}
+.site-footer a {
+  color: grey;
+  font-style: normal;
+}
+/**
+ * Layout for responsive style through media queries.
+ */
+@media screen and (max-width: 1500px) {
+  .site-logo {
+    display: none;
+  }
+}
+/**
+ * Navbar
+ */
+@media screen and (max-width: 960px) {
+  .rm-desktop a {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+}
+@media screen and (max-width: 800px) {
+  .region-header-col-1,
+  .region-header-col-3 {
+    width: 15%;
+  }
+  .region-header-col-2 {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 700px) {
   .rm-desktop {
     display: none;
   }
 }
-@media screen and (min-width: 680px) {
-  .rm-small {
-    display: none;
-  }
+/**
+ * Show off the regions used in the website, to ease styling.
+ */
+.regions .outer-wrap {
+  background-color: #f4e3c9;
+  border: 1px solid #e3b774;
+}
+.regions .inner-wrap {
+  background-color: #f4e0e9;
+  border: 1px solid #d995b4;
+}
+.regions .region-header-col-1,
+.regions .region-header-col-2,
+.regions .region-header-col-3,
+.regions .region-flash,
+.regions .region-breadcrumb,
+.regions .region-flash-message,
+.regions .region-columns-above,
+.regions .region-main,
+.regions .region-after-main,
+.regions .region-columns-below,
+.regions .region-sidebar-left,
+.regions .region-sidebar-right,
+.regions .region-footer,
+.regions .region-footer-column-1,
+.regions .region-footer-column-2,
+.regions .region-footer-column-3 {
+  background-color: #b5dce1;
+  border: 1px solid #6cbac4;
+  color: #111;
 }
 /**
  * My own settings, not currently in their own module.
