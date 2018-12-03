@@ -40,6 +40,11 @@ return [
             ],
         ],
         [
+            "text" => "Rapporter",
+            "url" => "rapporter",
+            "title" => "Rapporter från kursmomenten.",
+        ],
+        [
             "text" => "Om",
             "url" => "om",
             "title" => "Om denna webbplats.",

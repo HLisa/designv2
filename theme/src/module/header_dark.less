@@ -1,0 +1,43 @@
+@backgroundHeader: #430B12;
+@textColor: #69396B;
+
+.outer-wrap-header {
+   max-width: 100%;
+}
+
+.inner-wrap-header {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.region-header {
+    background-color: @backgroundHeader;
+    padding-top: 50px;
+    height: 160px;
+}
+
+.region.header-col-1,
+.region.header-col-3 {
+    width: 20%;
+    float: left;
+}
+
+.region.header-col-2 {
+    width: 60%;
+    float: left;
+}
+
+ .my-navbar li a {
+     text-decoration: none;
+     color: @textColor;
+     font-size: 24px;
+ }
+
+ .my-navbar li a:hover {
+    text-decoration: line-through;
+ }
+
+  .my-navbar li a .selected {
+    text-decoration: line-through;
+  }
