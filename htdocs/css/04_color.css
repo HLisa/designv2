@@ -4962,6 +4962,9 @@ ul.toc li.section-header {
 /**
  * Modules
   */
+.site-logo-text {
+  font-family: Srisakdi;
+}
 .outer-wrap-header {
   max-width: 100%;
 }
@@ -4983,9 +4986,6 @@ ul.toc li.section-header {
   width: 60%;
   float: left;
 }
-.site-logo-text {
-  font-family: Srisakdi;
-}
 .my-navbar li a {
   text-decoration: none;
   color: #65FA74;
@@ -5001,6 +5001,9 @@ ul.toc li.section-header {
 }
 .my-navbar ul li {
   background-color: #ED6D95;
+}
+.my-navbar ul li:hover {
+  color: #65FA74;
 }
 .outer-wrap-footer {
   box-sizing: border-box;
@@ -5033,6 +5036,15 @@ ul.toc li.section-header {
   color: #65FA74;
   font-style: normal;
 }
+.has-sidebar-left .next-previous {
+  font-size: 18px;
+  font-style: normal;
+}
+.next a,
+.previous a {
+  font-style: normal;
+  text-decoration: none;
+}
 .region-sidebar-right .block {
   background-color: #ED6D95;
   padding: 1em;
@@ -5049,15 +5061,6 @@ ul.toc li.section-header {
 .region-main .block:hover {
   box-sizing: border-box;
   box-shadow: 15px 15px 10px 0px rgba(0, 0, 0, 0.2);
-}
-.has-sidebar-left .next-previous {
-  font-size: 18px;
-  font-style: normal;
-}
-.next a,
-.previous a {
-  font-style: normal;
-  text-decoration: none;
 }
 @font-face {
   font-family: 'Forum';

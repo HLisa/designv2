@@ -1,5 +1,6 @@
-@backgroundHeader: #430B12;
-@textColor: #69396B;
+.site-logo-text a {
+    font-family: EB Garamond;
+}
 
 .outer-wrap-header {
    max-width: 100%;
@@ -12,7 +13,7 @@
 }
 
 .region-header {
-    background-color: @backgroundHeader;
+    background-color: @backgroundColor;
     padding-top: 50px;
     height: 160px;
 }
@@ -32,6 +33,7 @@
      text-decoration: none;
      color: @textColor;
      font-size: 24px;
+     font-family: Petit Formal Script;
  }
 
  .my-navbar li a:hover {
@@ -41,3 +43,11 @@
   .my-navbar li a .selected {
     text-decoration: line-through;
   }
+
+.my-navbar ul li {
+    background-color: @backgroundFooter;
+}
+
+.my-navbar ul li:hover {
+    color: @textColor;
+}

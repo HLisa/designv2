@@ -1,30 +1,30 @@
 @import "kmom04.less";
 @import "module/header_dark.less";
 @import "module/footer_dark.less";
-@import url('https://fonts.googleapis.com/css?family=Antic+Slab|Lustria|Martel');
+@import "module/main_dark.less";
+
+@import url('https://fonts.googleapis.com/css?family=Antic+Slab|Lustria|Martel|EB+Garamond|Petit+Formal+Script');
 
 @backgroundColor: #430B12;
 @textColor: #69396B;
 
-// @fontFamilyHeadings: "lustria", sans-serif;
-// @fontFamilyBody: "anticslab", sans-serif;
-// @fontFamilyCode:     "monospace";
-
 body {
     background-color: @backgroundColor;
     color: @textColor;
-    font-family: lustria;
+    font-family: martel;
+}
 
+h1,
+h2,
+h3,
+h4 {
+    font-family: Petit Formal Script;
 }
 
 img {
-    max-width: 100%
+    max-width: 100%;
 }
 
 a {
     color: @textColor;
-}
-
-.site-logo-text a {
-    font-family: "martel";
 }

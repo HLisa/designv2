@@ -4962,6 +4962,9 @@ ul.toc li.section-header {
 /**
  * Modules
   */
+.site-logo-text a {
+  font-family: EB Garamond;
+}
 .outer-wrap-header {
   max-width: 100%;
 }
@@ -4988,6 +4991,7 @@ ul.toc li.section-header {
   text-decoration: none;
   color: #69396B;
   font-size: 24px;
+  font-family: Petit Formal Script;
 }
 .my-navbar li a:hover {
   text-decoration: line-through;
@@ -4995,12 +4999,19 @@ ul.toc li.section-header {
 .my-navbar li a .selected {
   text-decoration: line-through;
 }
+.my-navbar ul li {
+  background-color: #24060E;
+}
+.my-navbar ul li:hover {
+  color: #69396B;
+}
 .outer-wrap-footer {
   box-sizing: border-box;
   background-color: #24060E;
   width: 100%;
   margin-top: 2em;
   padding: 10px;
+  font-family: lustria;
 }
 .inner-wrap-footer {
   margin: 0 auto;
@@ -5020,16 +5031,41 @@ ul.toc li.section-header {
   font-style: italic;
   font-size: 14px;
   color: #69396B;
+  border-top: 2px solid #69396B;
 }
 .site-footer a {
   color: #69396B;
   font-style: normal;
+}
+.region-sidebar-right .block {
+  background-color: #24060E;
+  padding: 1em;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
+  margin-top: 1em;
+}
+.region-sidebar-right .block:hover {
+  box-shadow: 15px 15px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.region-main .block {
+  box-sizing: border-box;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
+  font-family: lustria;
+}
+.region-main .block:hover {
+  box-sizing: border-box;
+  box-shadow: 15px 15px 10px 0px rgba(0, 0, 0, 0.2);
 }
 @font-face {
   font-family: 'Antic Slab';
   font-style: normal;
   font-weight: 400;
   src: local('Antic Slab Regular'), local('AnticSlab-Regular'), url(https://fonts.gstatic.com/s/anticslab/v6/bWt97fPFfRzkCa9Jlp6IacVcWQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  src: local('EB Garamond Regular'), local('EBGaramond-Regular'), url(https://fonts.gstatic.com/s/ebgaramond/v9/SlGUmQSNjdsmc35JDF1K5GR1SDw.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Lustria';
@@ -5043,17 +5079,26 @@ ul.toc li.section-header {
   font-weight: 400;
   src: local('Martel'), local('Martel-Regular'), url(https://fonts.gstatic.com/s/martel/v2/PN_xRfK9oXHga0XdZsg6.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'Petit Formal Script';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Petit Formal Script'), local('PetitFormalScript-Regular'), url(https://fonts.gstatic.com/s/petitformalscript/v5/B50TF6xQr2TXJBnGOFME6u5OR83oRP5qkH7gOw.ttf) format('truetype');
+}
 body {
   background-color: #430B12;
   color: #69396B;
-  font-family: lustria;
+  font-family: martel;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: Petit Formal Script;
 }
 img {
   max-width: 100%;
 }
 a {
   color: #69396B;
-}
-.site-logo-text a {
-  font-family: "martel";
 }
