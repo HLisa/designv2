@@ -1,9 +1,32 @@
 @import "kmom04.less";
+@import "module/header_minimalistic.less";
+@import "module/main_minimalistic.less";
+@import "module/footer_minimalistic.less";
 
-@backgroundColor: #ccc;
+
+@import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans|Questrial|Quicksand');
+
+@backgroundColor: #fff;
 @textColor: #333;
+@fontFamily: "Qestrial", sans-serif;
 
 body {
     background-color: @backgroundColor;
+    color: @textColor;
+    font-family: @fontFamily;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: Quattrocento Sans;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
     color: @textColor;
 }

@@ -5036,6 +5036,12 @@ ul.toc li.section-header {
   color: #65FA74;
   font-style: normal;
 }
+.region-flash-message .flashmessage.info {
+  text-align: center;
+}
+.breadcrumb-list li {
+  padding-right: 3em;
+}
 .has-sidebar-left .next-previous {
   font-size: 18px;
   font-style: normal;
@@ -5061,6 +5067,9 @@ ul.toc li.section-header {
 .region-main .block:hover {
   box-sizing: border-box;
   box-shadow: 15px 15px 10px 0px rgba(0, 0, 0, 0.2);
+}
+fieldset {
+  border: 2px solid;
 }
 @font-face {
   font-family: 'Forum';

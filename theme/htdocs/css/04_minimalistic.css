@@ -4962,7 +4962,136 @@ ul.toc li.section-header {
 /**
  * Modules
   */
+.site-logo-text {
+  font-style: normal;
+  font-family: Quattrocento Sans;
+}
+.outer-wrap-header {
+  max-width: 100%;
+}
+.inner-wrap-header {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.region-header {
+  padding-top: 50px;
+  height: 160px;
+}
+.region.header-col-1,
+.region.header-col-3 {
+  width: 20%;
+  float: left;
+}
+.region.header-col-2 {
+  width: 60%;
+  float: left;
+}
+.my-navbar {
+  font-family: Quattrocento Sans;
+}
+.region-flash-message .flashmessage.info {
+  text-align: center;
+}
+.breadcrumb-list li {
+  padding-right: 3em;
+}
+.has-sidebar-left .next-previous {
+  font-size: 20px;
+  font-style: normal;
+}
+.next a,
+.previous a {
+  font-style: normal;
+  text-decoration: none;
+}
+.region-main .article {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.region-sidebar-right .block {
+  padding: 1em;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
+  margin-top: 1em;
+}
+.region-sidebar-right .block:hover {
+  box-shadow: 15px 15px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.region-main .block {
+  box-sizing: border-box;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
+}
+.region-main .block:hover {
+  box-sizing: border-box;
+  box-shadow: 15px 15px 10px 0px rgba(0, 0, 0, 0.2);
+}
+fieldset {
+  border: 2px solid;
+}
+.outer-wrap-footer {
+  box-sizing: border-box;
+  background-color: #333;
+  width: 100%;
+  margin-top: 2em;
+  padding: 10px;
+}
+.inner-wrap-footer {
+  margin: 0 auto;
+  width: 1100px;
+}
+.footer-column {
+  width: 30%;
+  float: left;
+  padding: 10px;
+  color: grey;
+  height: 200px;
+  border-bottom: 2px solid;
+}
+.footer-column a {
+  color: grey;
+}
+.site-footer {
+  text-align: center;
+  font-style: normal;
+  font-size: 14px;
+  color: grey;
+}
+.site-footer a {
+  color: grey;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Quattrocento Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Quattrocento Sans'), local('QuattrocentoSans'), url(https://fonts.gstatic.com/s/quattrocentosans/v10/va9c4lja2NVIDdIAAoMR5MfuElaRB0zJt0o.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Questrial';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Questrial'), local('Questrial-Regular'), url(https://fonts.gstatic.com/s/questrial/v7/QdVUSTchPBm7nuUeVf70viFg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Quicksand Regular'), local('Quicksand-Regular'), url(https://fonts.gstatic.com/s/quicksand/v8/6xKtdSZaM9iE8KbpRA_hK1QI.ttf) format('truetype');
+}
 body {
-  background-color: #ccc;
+  background-color: #fff;
+  color: #333;
+  font-family: "Qestrial", sans-serif;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: Quattrocento Sans;
+}
+img {
+  max-width: 100%;
+}
+a {
   color: #333;
 }
