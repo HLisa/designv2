@@ -1,0 +1,128 @@
+/*!
+ * Stylesheet for design kmom05.
+ *
+ * This stylesheet is for the design course and kmom04 where we use LESS.
+ */
+
+ @import "mixin/clearfix.less";
+
+ .clearfix() {
+    #design-mixin.clearfix();
+ }
+
+ /**
+ * Figure and figcaption for images and other media using figure/figcaption
+ */
+@import "@desinax/figure/less/asciinema.less";
+@import "@desinax/figure/less/codepen.less";
+@import "@desinax/figure/less/figure.less";
+
+ /**
+  * Normalize and reset the style.
+  */
+ @import "normalize.css/normalize.less";
+
+ /**
+ * Font Awesome.
+ */
+@import "@fortawesome/fontawesome-free/less/fontawesome.less";
+@import "@fortawesome/fontawesome-free/less/solid.less";
+@import "@fortawesome/fontawesome-free/less/brands.less";
+
+/**
+ * Internal self contained modules, save in directory module/.
+ */
+
+
+
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+
+ /**
+  * A responsive menu.
+  */
+ @import "@desinax/responsive-menu/less/responsive-menu.less";
+ @import "@desinax/responsive-menu/less/media-queries.less";
+
+ /**
+  * Import the typographic grid.
+  */
+ @import "@desinax/typographic-grid/less/typography-font-families.less";
+ @import "@desinax/typographic-grid/less/typography-defaults.less";
+
+// Show the grid
+.hgrid .inner-wrap {
+    @gridImage: "../img/magic-number-@{magicNumber}.png";
+    #desinax-hgrid.showGrid(@gridImage);
+}
+
+ /**
+  * Base style to affect HTML elements on a general scale.
+  */
+ // @import "base/base.less";
+  // @import "base/base_kmom03.less";
+
+ /**
+ * Import the vertical grid.
+ */
+@import "@desinax/vertical-grid/less/grid.less";
+@import "layout/vgrid.less";
+@import "layout/responsive.less";
+
+// Default grid, change to fit your requirements.
+// @columnWidth:   30;
+// @gutterWidth:   10;
+// @columns:       24;
+// @gridType:      "float"; // "flex"
+
+// @import "layout/layout.less";
+
+     // To add style for ?regions
+
+/**
+ * My own settings, not currently in their own module.
+ */
+ @import "module/kmom05.less";
+/**
+ * Modules
+  */
+// @import "module/header_vgrid.less";
+// @import "module/footer_vgrid.less";
+// @import "module/flash_vgrid.less";
+
+ // Adapt the typograpfic grid to my styles
+ @import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans|Questrial|Quicksand');
+
+ @backgroundColor: #fff;
+ @textColor: #333;
+ @fontFamily: "Qestrial", sans-serif;
+
+ body {
+     background-color: @backgroundColor;
+     color: @textColor;
+     font-family: @fontFamily;
+ }
+
+ h1,
+ h2,
+ h3,
+ h4 {
+     font-family: Quattrocento Sans;
+ }
+
+ img {
+     max-width: 100%;
+ }
+
+ a {
+     color: @textColor;
+ }
+
+
+ // Magic number and base fontsize
+ @magicNumber:  24px;  // 22px
+ @fontSizeBody: 16px;
+
+ @colorH4BorderBottom: grey;

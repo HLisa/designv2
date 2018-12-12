@@ -1,4 +1,4 @@
-Kmom04
+Kmom04 - Färgschema
 =======================
 
 I den här uppgiften har tre stycken webbplatser valts ut för en utvärdering av deras färgval. Rapporten syftar till att jämföra och analysera färgerna på de olika webbplatserna och undersöka huruvida färgvalen är relevanta för produkten som visas.
