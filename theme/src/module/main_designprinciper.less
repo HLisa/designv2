@@ -1,0 +1,236 @@
+
+// .arrow {
+//     animation: MoveUpDown 3s ease-in-out infinite;
+//     position: absolute;
+//     width: 0;
+//     height: 0;
+//     left: 49vw;
+//     bottom: 6vh;
+//     border-left: 2vw solid transparent;
+//     border-right: 2vw solid transparent;
+//     border-top: 2vw solid #333;
+// }
+
+.wrap-all {
+    padding: 10px;
+    margin-top: 20vh;
+    overflow: auto;
+}
+
+.article {
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
+    padding-right: 2em;
+    padding-top: 1em;
+    max-width: 100%;
+    padding-left: 1em;
+    margin-top: 1em;
+    padding-bottom: 1em;
+}
+
+.outer-wrap-main {
+    margin-bottom: 2em;
+    background-color: rgba(255,255, 255, 0.7);
+}
+
+.inner-wrap-main .row {
+    margin-bottom: 10vw;
+}
+
+ .right {
+    padding-top: 5px;
+    text-align: center;
+    overflow: auto;
+    -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+    float: right;
+    padding: 10px;
+ }
+
+ .left {
+     -webkit-filter: grayscale(100%);
+     filter: grayscale(100%);
+ }
+
+.region-main .figure:hover {
+    opacity: 1;
+	-webkit-animation: flash 2.5s;
+	animation: flash 2.5s;
+}
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.region-sidebar-right .block{
+    // background-color: rgba(255,255, 255, 0.2);
+    padding: 1em;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
+    margin-top: 1em;
+    -webkit-transition: .7s ease-in-out;
+    transition: .7s ease-in-out;
+}
+
+.region-sidebar-right .block a:hover {
+    text-decoration: none;
+}
+
+.region-sidebar-right .block:hover {
+    background-color: rgba(255,255, 255, 0.4);
+    box-shadow: 15px 15px 10px 0px rgba(0, 0, 0, 0.3);
+    transition: all .7s;
+}
+
+.region-main .block {
+    // background-color: rgba(255,255, 255, 0.2);
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
+    -webkit-transition: .7s ease-in-out;
+    transition: .7s ease-in-out;
+}
+
+.region-main .block p {
+    padding: 1em;
+}
+
+.region-main .block:hover {
+    background-color: rgba(255,255, 255, 0.4);
+    box-shadow: 15px 15px 10px 0px rgba(0, 0, 0, 0.3);
+    transition: all .7s;
+}
+
+.region-main .block .figure {
+    padding: 5px;
+    text-align: -webkit-auto;
+    float: left;
+}
+
+.region-main .block ::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.block .toc {
+    list-style-type: none;
+    padding: 1em;
+}
+
+.toc a:hover {
+    // text-decoration: underline;
+    text-decoration: none;
+    color: #aaa;
+}
+
+ul.toc li a,
+ul.toc li a:after,
+ul.toc li a:before {
+    text-decoration: none;
+    transition: all .7s;
+}
+
+ul.toc li.level-0 {
+    font-weight: bolder;
+    font-style: oblique;
+}
+
+ul.toc li.section-header {
+    font-weight: bold;
+}
+
+.next-previous {
+    font-size: 26px;
+    font-weight: bold;
+    margin: 1em;
+}
+
+.next,
+.previous {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.next a,
+.next a:before,
+.next a:after,
+.previous a,
+.previous a:before,
+.previous a:after {
+    font-size: 16px;
+    text-decoration: none;
+    transition: all .7s;
+}
+
+.next a:hover,
+.previous a:hover {
+    // text-decoration: underline
+    text-decoration: none;
+    color: #aaa;
+}
+
+.next {
+   float: right;
+}
+
+.outer-wrap-breadcrumb {
+    background-color: rgba(255,255, 255, 0.7);
+}
+
+.inner-wrap-breadcrumb {
+   font-size: 20px;
+   padding: 10px;
+   overflow: auto;
+}
+
+.breadcrumb-list ul {
+    list-style-type: none;
+}
+
+.breadcrumb-list ul li {
+    display: inline;
+    padding: 2em;
+}
+
+.breadcrumb-list ul li a,
+.breadcrumb-list ul li a:after,
+.breadcrumb-list ul li a:before {
+    transition: all .7s;
+    text-decoration: none;
+}
+
+.breadcrumb-list ul li a:hover {
+    // text-decoration: underline;
+    text-decoration: none;
+    color: #aaa;
+}
+
+figcaption p {
+    font-style: italic;
+}
+
+.wrap-sidebar {
+    box-sizing: border-box;
+    padding-left: 1em;
+    margin-top: 1em;
+}
+
+.region-sidebar-left {
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.blog-list-item {
+    padding: 1em;
+}

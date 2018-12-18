@@ -32,7 +32,7 @@ Min me-sida i kursen design
 
 Välkommen till min me-sida i kursen design. Kursen är en del av kurspaketet Webbprogrammering på Blekinge Tekniska Högskola och syftet med den här sidan är att i praktiken öva på de moment som kursen innefattar. Sidan kommer att uppdateras under kursens gång i och med att ny kunskap och nya lärdomar tillkommer i varje kursmoment, så håll utkik!
 
-[FIGURE src="img/lisa.jpg" class="right" caption="Bild på mig"]
+[FIGURE src="image/lisa.JPG?w=400&h=600&crop-to-fit&area=15,15,15,0" class="right" caption="Bild på mig"]
 
 Mitt namn är Lisa Hult och jag är född och uppvuxen i Stockholm, mitt i smeten. Barndom och tonår har spenderats i samma kvarter, samma lägenhet och samma sommarstuga.  I gymnasiet blev jag störtförälskad i ”The great white north” eller som vi känner till det, Kanada, dit jag åkte som utbytesstudent under ett år. Livet på prärien var helt fantastiskt och gav mig mersmak på äventyr och vinter. Sedan dess har jag ständigt drömt om, planerat och varit på väg till nästa ställe medans jag jobbat och jobbat och jobbat för att spara pengar.
 

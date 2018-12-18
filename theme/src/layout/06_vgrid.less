@@ -1,0 +1,122 @@
+/**
+ * Layout using vgrid.
+ */
+
+/**
+ * Variables
+ */
+
+ /**
+  * Responsive 1, 2, 3
+  */
+ @media screen and (max-width: 1000px) {
+     .region-main {
+       #desinax-vgrid.column(@columns);
+       // #desinax-vgrid.push(0);
+   }
+ }
+
+ @media screen and (max-width: 850px) {
+     .region-main.has-sidebar-right {
+            #desinax-vgrid.column(@columns);
+    }
+    .region-sidebar-right {
+        // display: none;
+        #desinax-vgrid.column(@columns);
+        #desinax-vgrid.push(0);
+    }
+ }
+
+/**
+ * General layout
+ */
+
+ .row {
+     #desinax-vgrid.row();
+     // background-color: #0f0;
+     margin-bottom: 12px;
+ }
+
+.inner-wrap {
+      #desinax-vgrid.grid(1100px);
+  }
+
+.outer-wrap-header {
+    #desinax-vgrid.grid(100%);
+  }
+
+.inner-wrap-header {
+    #desinax-vgrid.grid(100%);
+  }
+
+  .inner-wrap-header .row {
+    max-width: 100%;
+}
+
+.vgrid .inner-wrap {
+    @gridImage: "../img/grid_24x30x10-nomargin.png";
+    //@gridImage: "../../img/grid_12x60x20-nomargin.png";
+    #desinax-vgrid.showGrid(@gridImage, 1100px);
+
+    &.inner-wrap-header {
+        #desinax-vgrid.showGrid(@gridImage);
+    }
+}
+
+  .region-header-col-1,
+  .region-header-col-3 {
+      #desinax-vgrid.column(5);
+  }
+
+  .region-header-col-2 {
+      #desinax-vgrid.column(14);
+      text-align: center;
+  }
+
+.region-flash {
+    #desinax-vgrid.column(@columns);
+}
+
+.region-breadcrumb {
+    #desinax-vgrid.column(@columns);
+}
+
+  .inner-wrap-main {
+     padding-bottom: 20px
+  }
+
+  .region-main {
+    #desinax-vgrid.column(@columns * 3 / 4);
+    #desinax-vgrid.push(3);
+
+        &.has-sidebar {
+            #desinax-vgrid.push(0);
+        }
+
+        &.has-sidebar-right {
+            #desinax-vgrid.column(@columns * 3 / 4 - 1);
+        }
+
+        &.has-sidebar-left.has-sidebar-right {
+
+        }
+  }
+
+ .region-sidebar-left,
+ .region-sidebar-right {
+    #desinax-vgrid.column(@columns * 1 / 4);
+ }
+
+ .region-sidebar-right {
+    #desinax-vgrid.push(1);
+ }
+
+ .footer-column {
+     #desinax-vgrid.column(@columns / 3);
+    color: grey;
+    // border-bottom: 2px solid grey;
+ }
+
+ .site-footer {
+   #desinax-vgrid.column(@columns);
+}
